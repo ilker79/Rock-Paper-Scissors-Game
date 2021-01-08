@@ -1,7 +1,7 @@
-let userCount = prompt("how many times you want to play");
+let userResponse;
 
-while (userCount !== 0) {
-  let playerChoice = prompt("What is your choice?");
+while (userResponse = true) {
+let playerChoice = prompt("What is your choice?");
 
   function getWinner(playerMove, computerMove) {
     if (playerMove === "Rock" && computerMove === "Rock") {
@@ -22,7 +22,14 @@ while (userCount !== 0) {
       return "0";
     } else if (playerMove === "Scissors" && computerMove === "Paper") {
       return "1";
-    }
+    } 
+   userCount = prompt('Do you want to continue playing?') 
+    if (userCount === "Yes") { 
+        return true
+   } else {
+       return false
+   }
+
   }
   let computerChoiceArray = ["Rock", "Paper", "Scissors"];
 
@@ -34,6 +41,6 @@ while (userCount !== 0) {
 
   let result = getWinner(playerChoice, computerChoice);
   alert(`Computer choice is: ${computerChoice} ` + " " + result);
+}   
 
-  userCount--;
-}
+
