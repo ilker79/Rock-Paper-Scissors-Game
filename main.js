@@ -1,5 +1,5 @@
-let playerMove;
-let computerMove;
+// let playerMove;
+// let computerMove;
 
 let playerChoice = prompt("What is your choice?");
 
@@ -24,6 +24,13 @@ function getWinner(playerMove, computerMove) {
     return "1";
   }
 }
+let computerChoiceArray = ['Rock', 'Paper', 'Scissors']
 
-let result = getWinner(playerChoice, "Paper");
-console.log(result);
+function computerMove() {
+    return Math.floor(Math.random () * 3);
+}
+
+console.log(computerMove());
+
+let result = getWinner(playerChoice, computerChoiceArray[computerMove()]);
+alert(result);
