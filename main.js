@@ -7,10 +7,18 @@ let input;
 
 function selected() {
   if (document.querySelector("#Rock").checked) {
-    console.log("trueee");
     input = "Rock";
+  } else if (document.querySelector("#Paper").checked) {
+    input = "Paper";
+  } else if (document.querySelector("#Scissors").checked) {
+    input = "Scissors";
   }
+  document.querySelector("p").innerText = input;
 }
+
+let myButton = document.querySelector("#buttonId1");
+
+myButton.addEventListener("click", selected);
 
 // while ((userResponse = true)) {
 //   let playerChoice = prompt("What is your choice?");
