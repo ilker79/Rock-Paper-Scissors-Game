@@ -7,22 +7,23 @@ let computerMove2 = "Paper";
 let playerMove3 = "Scissors";
 let computerMove3 = "Scissors";
 
-if (playerMove === "Rock" && computerMove === "Rock") {
+if (playerMove && computerMove) {
   console.log("draw");
-} else if (playerMove === "Rock" && computerMove === "Scissors") {
+} else if (playerMove && computerMove2) {
   console.log("Player wins");
-} else if (playerMove === "Rock" && computerMove === "Paper") {
+} else if (playerMove&& computerMove3) {
   console.log("Computer wins");
-} else if (playerMove === "Paper" && computerMove === "Rock") {
+} else if (playerMove2 && computerMove) {
   console.log("Player wins");
-} else if (playerMove === "Paper" && computerMove === "Scissors") {
+} else if (playerMove2 && computerMove3) {
   console.log("Computer wins");
-} else if (playerMove === "Paper" && computerMove === "Paper") {
+} else if (playerMove2 && computerMove2) {
   console.log("Draw");
-} else if (playerMove === "Paper" && computerMove === "Rock") {
-  console.log("Player wins");
-} else if (playerMove === "Paper" && computerMove === "Scissors") {
+} else if (playerMove3 && computerMove) {
   console.log("Computer wins");
-} else if (playerMove === "Paper" && computerMove === "Paper") {
+} else if (playerMove3 && computerMove3) {
   console.log("Draw");
+} else if (playerMove3 && computerMove2) {
+  console.log("Player Wins");
 }
+
