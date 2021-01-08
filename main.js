@@ -1,32 +1,26 @@
-let playerMove = "Rock";
-let computerMove = "Rock";
+let playerMove
+let computerMove 
 
-let playerMove2 = "Paper";
-let computerMove2 = "Paper";
-
-let playerMove3 = "Scissors";
-let computerMove3 = "Scissors";
-
-function playerMove(player, computer) {
-  if (playerMove && computerMove) {
-    console.log("draw");
-  } else if (playerMove && computerMove2) {
-    console.log("Player wins");
-  } else if (playerMove && computerMove3) {
-    console.log("Computer wins");
-  } else if (playerMove2 && computerMove) {
-    console.log("Player wins");
-  } else if (playerMove2 && computerMove3) {
-    console.log("Computer wins");
-  } else if (playerMove2 && computerMove2) {
-    console.log("Draw");
-  } else if (playerMove3 && computerMove) {
-    console.log("Computer wins");
-  } else if (playerMove3 && computerMove3) {
-    console.log("Draw");
-  } else if (playerMove3 && computerMove2) {
-    console.log("Player Wins");
+function getWinner(playerMove, computerMove) {
+  if (playerMove === "Rock" && computerMove === "Rock") {
+    return '0';
+  } else if (playerMove === "Rock" && computerMove === "Scissors") {
+    return '1';
+  } else if (playerMove === "Rock" && computerMove === "Paper") {
+    return '-1';
+  } else if (playerMove === "Paper" && computerMove === "Rock") {
+    return '1';
+  } else if (playerMove === "Paper" && computerMove === "Scissors") {
+    return '-1';
+  } else if (playerMove === "Paper" && computerMove === "Paper") {
+    return '0';
+  } else if (playerMove === "Scissors" && computerMove === "Rock") {
+    return '-1';
+  } else if (playerMove === "Scissors" && computerMove === "Scissors") {
+    return '0';
+  } else if (playerMove === "Scissors" && computerMove === "Paper") {
+    return '1';
   }
 }
 
-let result = playerMove("rock", "paper");
+let result = getWinner();
