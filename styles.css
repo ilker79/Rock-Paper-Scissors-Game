@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+  }
+  
+  form {
+    font-size: 1.5em;
+  }
+  
+  #rock_img,
+  #paper_img,
+  #scissors_img {
+    width: 150px;
+    height: auto;
+  }
+  
+  #player-position,
+  #playerwin {
+    color: rgb(0, 38, 255);
+    text-align: left;
+    float: left;
+    margin-left: 100px;
+  }
+  
+  #draw-position,
+  #game-draw {
+    color: rgb(0, 38, 255);
+    text-align: center;
+  }
+  
+  #computer-position,
+  #computerwin {
+    color: rgb(0, 38, 255);
+    text-align: right;
+    float: right;
+    margin-right: 100px;
+  }
+  
+  #name-restriction {
+    display: none;
+    width: auto;
+    border: 15px solid red;
+    padding: 10px;
+    margin: 20px;
+  }
+  
+  #game-visibility {
+    display: none;
+  }
+  

@@ -5,20 +5,42 @@
         <title>Rock, Paper, Scissors</title>
     </head>
     <body>
-        <h1>Rock, Paper, Scissors</h1>
+        
         <form>
-            <input type="radio" id="Rock" name="x" value="Rock">
-            <label for="male">Rock</label><br>
-            <input type="radio" id="Paper" name="x" value="Paper">
-            <label for="female">Paper</label><br>
-            <input type="radio" id="Scissors" name="x" value="Scissors">
-            <label for="other">Scissors</label>
-          </form> 
-          <button id="buttonId1">Choose one</button>
-          <p></p>
+            <label for="player-name-input">Please enter your name to start the game</label><br>
+            <input type="text" id="player-name-input" name="player-name-input">
+            <input type="button" value="Submit" id="submit"><br>
+            <h2 id="name-restriction" value="Edit"> </h2>
+        </form>
+        <div id="game-visibility">
+                <form>
+                <h1>Rock, Paper, Scissors</h1>       
+                <label for="Rock"><img id="rock_img" src="images/rock.jpg"></label>
+                <input type="radio" id="Rock" name="x" value="Rock">
+                
+                <label for="Paper"><img id="paper_img" src="images/paper.jpg"></label>
+                <input type="radio" id="Paper" name="x" value="Paper">
+                
+                <label for="Scissors"><img id="scissors_img" src="images/scissors.jpg"></label>
+                <input type="radio" id="Scissors" name="x" value="Scissors">
+              </form> 
+              <button id="play-button">Click to Play</button><br>
+              <button id="reset-button">Reset</button>
+              <div>
+                <h2 id="player-position"> <h2 id="playerwin"></h2></h2>
+                <h2 id="computer-position">Computer:</h2><h2 id="computerwin"></h2>
+                <h2 id="draw-position">Draws:<h2 id="game-draw"></h2></h2>
+              </div>
+              <h2 id="player-choice"></h2>
+              <h2 id="computer-choice"></h2>
+              <h2 id="winner"></h2>
+        
+        </form>
+        </div>
           
         <script src="main.js"></script>
         
     </body>
 </html>
+
 
